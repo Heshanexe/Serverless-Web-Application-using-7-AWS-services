@@ -2,7 +2,7 @@
 
 **Overview**
 
-In this tutorial, I will create a simple serverless web application that enables users 
+As my first AWS Cloud Project, I will create a simple serverless web application that enables users 
 to request unicorn rides from the Wild Rydes fleet. The application will present users
 with an HTML-based user interface for indicating the location where they would like 
 to be picked up and will interact with a RESTful web service on the backend to 
