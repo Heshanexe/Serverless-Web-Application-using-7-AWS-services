@@ -11,7 +11,7 @@ facilities for users to register with the service and log in before requesting r
 
 **Prerequisites**
 
-For this project, I need an AWS account(which i already have) with AWS CLI installed, an 
+For this project, I need an AWS account (which i already have) with AWS CLI installed, an 
 account with ArcGIS to add mapping to your app, a text editor, and a web browser. 
 
 
