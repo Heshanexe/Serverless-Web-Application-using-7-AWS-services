@@ -11,10 +11,9 @@ facilities for users to register with the service and log in before requesting r
 
 **Prerequisites**
 
-To complete this tutorial, you will need an AWS account, AWS CLI installed, an 
+For this project, I need an AWS account(which i already have) with AWS CLI installed, an 
 account with ArcGIS to add mapping to your app, a text editor, and a web browser. 
-If you don't already have an AWS account, you can follow the Setting Up Your 
-AWS Environment getting started guide for a quick overview.
+
 
 **Application architecture**
 
