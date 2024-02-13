@@ -54,7 +54,7 @@ Amplify Console. Your end users will then access your site using the public webs
 URL exposed by AWS Amplify Console. Therefore don't need to run any web servers or use 
 other services to make the site available.
 
-To make more real applications, Like if i want to use a custom domain to host the site. i Did as below to setting up a 
+To make this more real, Like if i want to use a custom domain to host the site. i did as below to setting up a 
 custom domain on Amplify.
 
 
