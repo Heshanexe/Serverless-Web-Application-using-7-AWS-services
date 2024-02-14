@@ -48,9 +48,9 @@ JavaScript to call remote RESTful APIs built with AWS Lambda and Amazon API Gate
 ![image](https://github.com/Heshanexe/Serverless-Web-Application-using-7-AWS-services/assets/153348700/78b48017-e51e-44d1-ba76-b2ce09a3112d)
 
 
-The architecture for this module is straightforward. All of your static web content 
+The architecture for this module is straightforward. All of the static web content 
 including HTML, CSS, JavaScript, images, and other files will be managed by AWS
-Amplify Console. Your end users will then access your site using the public website 
+Amplify Console. end users will then access the site using the public website 
 URL exposed by AWS Amplify Console. Therefore don't need to run any web servers or use 
 other services to make the site available.
 
@@ -65,8 +65,8 @@ custom domain on Amplify.
 **Overview**
 
 
-In this module you'll create an Amazon Cognito user pool to manage your users' 
-accounts. You'll deploy pages that enable customers to register as a new user, verify 
+In this module i will create an Amazon Cognito user pool to manage the users
+accounts. I did deploy pages that enable customers to register as a new user, verify 
 their email address, and sign into the site.
 
 **Architecture overview**
@@ -76,13 +76,13 @@ their email address, and sign into the site.
 
 When users visit your website they will first register a new user account. For the 
 purposes of this workshop we'll only require them to provide an email address and 
-password to register. However, you can configure Amazon Cognito to require 
+password to register. However, i can configure Amazon Cognito to require 
 additional attributes in your own applications.
 
 After users submit their registration, Amazon Cognito will send a confirmation email 
 with a verification code to the address they provided. To confirm their account, users
 will return to your site and enter their email address and the verification code they 
-received. You can also confirm user accounts using the Amazon Cognito console with 
+received. I can also confirm user accounts using the Amazon Cognito console with 
 a fake email addresses for testing.
 
 After users have a confirmed account (either using the email verification process or a 
@@ -101,9 +101,9 @@ module to authenticate against the RESTful API you build with Amazon API Gateway
 **Overview** 
 
 
-In this module, you will use AWS Lambda and Amazon DynamoDB to build a backend 
+In this module, i will use AWS Lambda and Amazon DynamoDB to build a backend 
 process for handling requests for your web application. The browser application that
-you deployed in the first module allows users to request that a unicorn be sent to a 
+i deployed in the first module allows users to request that a unicorn be sent to a 
 location of their choice. To fulfill those requests, the 
 JavaScript running in the browser will need to invoke a service running in the cloud.
 
@@ -114,13 +114,13 @@ JavaScript running in the browser will need to invoke a service running in the c
 ![image](https://github.com/Heshanexe/Serverless-Web-Application-using-7-AWS-services/assets/153348700/35476a29-f686-4c53-9ac9-3705a0ab2c8e)
 
 
-You will implement a Lambda function that will be invoked each time a user requests 
+I have implement a Lambda function that will be invoked each time a user requests 
 a unicorn. The function will select a unicorn from the fleet, record the request in a 
 DynamoDB table, and then respond to the frontend application with details about 
 the unicorn being dispatched.
 
-The function is invoked from the browser using Amazon API Gateway. You'll 
-implement that connection in the next module. For this module, you will just test your function in isolation.
+The function is invoked from the browser using Amazon API Gateway. I did
+implement that connection in the next module. For this module, i will just test your function in isolation.
 
 
 **STEP 04**
@@ -128,9 +128,9 @@ implement that connection in the next module. For this module, you will just tes
 **Overview**
 
 
-In this module, you will use Amazon API Gateway to expose the Lambda function you 
+In this module, i will use Amazon API Gateway to expose the Lambda function you 
 built in the previous module as a RESTful API. This API will be accessible on the 
-public Internet. It will be secured using the Amazon Cognito user pool you created in 
+public Internet. It will be secured using the Amazon Cognito user pool that i created in 
 the previous module. Using this configuration, you will then turn your statically 
 hosted website into a dynamic web application by adding client-side JavaScript that 
 makes AJAX calls to the exposed APIs.
@@ -141,19 +141,19 @@ makes AJAX calls to the exposed APIs.
 ![image](https://github.com/Heshanexe/Serverless-Web-Application-using-7-AWS-services/assets/153348700/793a45d0-ffbb-43ec-b154-4579b84544ad)
 
 
-The diagram above shows how the API Gateway component you will build in this 
-module integrates with the existing components you built previously. The grayed out 
-items are pieces you have already implemented in previous steps.
+The diagram above shows how the API Gateway component which i will build in this 
+module integrates with the existing components that i built previously. The grayed out 
+items are pieces that i have already implemented in previous steps.
 
-The static website you deployed in the first module already has a page configured to 
-interact with the API you will build in this module. The page at /ride.html has a 
+The static website i deployed in the first module already has a page configured to 
+interact with the API that i will build in this module. The page at /ride.html has a 
 simple map-based interface for requesting a unicorn ride. After authenticating using 
-the /signin.html page, your users will be able to select their pickup location by 
+the /signin.html page, users will be able to select their pickup location by 
 clicking a point on the map and then requesting a ride by choosing the 
 "Request Unicorn" button in the upper right corner.
 
 This module will focus on the steps required to build the cloud components of the 
-API, but if you're interested in how the browser code works that calls this API, you 
+API, but if i interested in how the browser code works that calls this API, i 
 can inspect the ride.js file of the website. In this case, the application uses jQuery's 
 ajax() method to make the remote request.
 
